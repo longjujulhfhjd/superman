@@ -1,0 +1,129 @@
+
+/*产品*/
+
+.sup-product-section{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.sup-product-index .sup-product-box{
+	margin: 0 auto;
+}
+.sup-product-index .sup-product-content{
+	margin: 0 auto;
+}
+.sup-product-section .sup-product-title{
+	width: 100%;
+}
+.sup-product-section .sup-product-advise{
+	color: #00C0FF;
+}
+.sup-product-section .sup-product-nav{
+	margin: 35px 0;
+}
+.sup-product-section .sup-product-tab{
+	color: #00C0FF;
+}
+.sup-product-section .sup-product-arrow{
+	border: 1px solid #00C0FF;
+	width: 10px;
+	height: 5px;
+}
+.sup-product-section .sup-product-nav b{
+	margin-right: 15px;
+}
+
+.active.on {
+	background: #FF0000;
+}
+.product-img-box.on {
+	display: block;
+}
+
+/*轮播*/
+.sup-product-section .sup-product-body{
+	position: relative;
+    width: 100%;
+    padding: 0 60px;
+    display: inline-block;
+    height: 260px;
+}
+.sup-product-section .sup-product-banner-box{
+	width: 82%;
+	height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    overflow: hidden;
+}
+.sup-product-section .sup-product-lists{
+	width: 1000%;
+	height: 100%;
+	position: absolute;
+}
+.sup-product-section .sup-product-lists li{
+	display: inline-block;
+	float: left;
+	padding: 0 15px;
+	width: 318px;
+	height: 260px;
+	text-align: center;
+}
+.sup-product-section .sup-product-lists li img{
+	width: 100%;
+	height: 100%;
+}
+
+.product-img-box {
+	position: relative;
+	display: none;
+    /*height: 260px;*/
+    width: 100%;
+}
+
+/*轮播按钮*/
+.sup-product-body .sup-product-btn{
+	width: 40px;
+	height: 140px;
+	color: #00C0FF;
+	font-size: 80px;
+	line-height: 140px;
+	background: rgba(0,0,0,.05);
+	position: absolute;
+	top:40%;
+}
+.sup-product-section .sup-product-btn:hover{
+	cursor: pointer;
+	background: rgba(0,0,0,.35);
+}
+.sup-product-section .sup-product-btn.prev{
+	left: 0;
+	text-indent: -40px;
+	transform: translateY(-50%);
+}
+.sup-product-section .sup-product-btn.nexts{
+	right: 0;
+	transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 1040px) {
+	.sup-product-index{
+		width: 90%;
+	}
+	.sup-product-index .sup-product-body li{
+		width: 5%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.sup-product-index{
+		width: 90%;
+	}
+	.sup-product-section .sup-product-body{
+		height: 480px;
+	}
+	.sup-product-index .sup-product-body li{
+		width: 10%;
+		height: 480px;
+	}
+}

@@ -1,0 +1,73 @@
+/*通配符*/
+html, body, div, 
+ul, li, 
+h1, h2, h3, h4, h5, h6, 
+p, dl, dt, dd, 
+ol, form, input, 
+textarea, th, td, select {
+    margin: 0;
+    padding: 0;
+}
+*{	
+	box-sizing: border-box;						
+	line-height: 1;
+}
+/*body*/
+html, body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ 	/*font: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",Roboto,Arial,sans-serif;*/
+ 	font-size: 0.15rem;
+ 	color: #111111;
+}
+/*这些元素本身不会继承父体的字体大小，设置了font-size:100%后就能自动继承*/
+h1, h2, h3, h4, h5, h6,button, 	input, select, textarea {
+    font-size: 100%;
+}
+/*ie被a标签包裹的img标签会有边框*/
+img{
+    border: none;
+    vertical-align: middle
+}
+/*为表表格设置合并边框模型*/			
+table{
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+/*span标签*/
+span{
+
+}
+/*a标签*/
+a{
+	text-decoration: none;
+	color: #111111;
+}
+a:hover{
+	text-decoration: none;
+	color: #111111;
+}
+/*ul ol*/
+ul, ol{
+	list-style: none;
+}
+/*input框*/
+input, textarea {
+    outline: none;
+    border: none;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+/*聚焦:去掉输入框的聚焦边框颜色*/
+:focus{
+	outline: none;
+}
+/*删除标签*/
+/*line-through删除线*/
+del{
+	text-decoration:line-through
+}

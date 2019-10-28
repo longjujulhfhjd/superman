@@ -1,0 +1,396 @@
+/*资讯板块样式begin*/
+/*左边部分动画效果*/
+.sup-information{
+	position: relative;
+	width: 781px;
+}
+.sup-information .sup-module-left{
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	border: none;
+}
+.sup-information .sup-module-left,
+.module-img-box .module-img{
+	width:0;
+	height:0;
+	opacity: 0;
+}
+.sup-information:hover .sup-module-left,
+.sup-information:hover .sup-module-left .module-img-box .module-img{
+	width: 231px;
+	height: 322px;
+	opacity: 1;
+	transition: width 2s, height 2s, opacity 5s;
+	}
+.sup-information:hover .sup-module-left{
+	top: 15%;
+	left: 30px;
+	transition: left 2s, top 2s, width 2s, height 2s, border .1s;
+	border: 2px solid #00C0FF;
+}
+.sup-information .sup-module-right{
+	height: 423px;
+	padding-left: 400px;
+	overflow: hidden;
+	padding-left: 600px;
+	animation: information-text 1.5s forwards;
+}
+@keyframes information-text{
+	0{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+		padding-left: 0;
+	}
+}
+
+/*右边部分*/
+.sup-news-right{
+	width: 380px;
+	padding-top: 30px;
+}
+/*右边进入时动画部分*/
+.super-tab-box{
+	height: 357px;
+	overflow: hidden;
+}
+.super-dh-con{
+	height: 380px;
+    padding-top:380px;
+    animation: informateMove 3s forwards;
+}
+@keyframes informateMove{
+	0{
+		opacity: 0;
+	}
+	100%{
+		padding-top: 0px;
+		opacity: 1;
+	}
+}
+/*标题*/
+.sup-news-title{
+	font-size: 32px;
+	height: 40px;
+    overflow: hidden;
+    margin-top: -68px;
+	animation: titleMove 2s forwards;
+}
+@keyframes titleMove{
+	0{
+		opacity: 0;
+	}
+	100%{
+		margin-top: 0px;
+		opacity: 1;
+	}
+}
+/* 标题动画 */
+.sup-news-title span{
+	font-weight: bolder;
+	color: #00C0FF;
+}
+/*tab切换部分*/
+.super-dh-lists{
+	width: 340px;
+	margin-left: 662px;
+	animation:tabAnimation 3s forwards ;
+}
+@keyframes tabAnimation{
+	0{
+		opacity: 0;	
+	}
+	100%{
+		opacity: 1;
+		margin-left: 0;
+	}
+}
+.super-dh-lists li{
+	cursor: pointer;
+	float: left;
+	padding: 20px;
+	position: relative;
+}
+.super-dh-lists li:first-child{
+	padding-left: 0;
+}
+.super-dh-lists li a{
+	cursor: pointer;
+	font-size: 16px;
+}
+.super-dh-lists li a:hover{
+	color: #00C0FF;
+}
+
+.super-dh-lists li .square{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #00C0FF;	
+	position: relative;
+}
+
+.super-dh-lists li .square i{
+	position: absolute;
+	top:0;	
+	display: none;
+	color: #00C0FF;
+}
+.news-img{
+	width: 115px;
+	height: 92px;
+}
+
+.super-dh-con .item{
+	width: 100%;
+	display: none;
+}
+/*文本*/
+.sup-tab-text{
+	display: inline-block;
+	width: 239px;
+	height: 46px;
+	line-height: 25px;
+}
+.sup-tab-right{
+	padding: 0;
+	padding-left: 15px;
+}
+.sup-tab-right-time{
+	padding: 10px 0;
+}
+.super-tab-title.on .square i {
+	display: block;
+}
+/*资讯板块样式end*/
+
+@media only screen and (max-width: 1200px) {
+	/*首页各版块外框*/
+	.sup-index-section{
+		width: 1020px;
+	}
+	.sup-information{
+		width: 699px;
+		
+	}
+	.sup-information:hover .sup-module-left,
+	.sup-information:hover .sup-module-left .module-img-box .module-img{
+		width: 231px;
+		height: 322px;
+	}
+	.sup-information .sup-module-right{
+		width: 366px;
+		height: 356px;
+	}
+	.module-img-box .module-img{
+		display: inline-block;
+		width: 231px;
+		height: 322px;
+		position: absolute;
+		top: -12px;
+		left: -12px;
+	}
+	.sup-module-right-text{
+		width: 411px;
+	    line-height: 25px;
+	    height: 153px;
+	    text-align: justify;/*设置段落文字两端对齐*/
+	}	
+	/*tab部分*/
+	.sup-news-right{
+		width: 310px;
+		font-size: 14px;
+	}
+	.sup-tab-right{
+		width: 180px;
+	}
+	.sup-news-title{
+		font-size: 19px;
+	}
+	.super-dh-lists{
+		width: 340px;
+	}
+	.news-img{
+		width: 95px;
+		height: 76px;
+	}
+	.sup-tab-text{
+		width: 195px;
+	}
+	.text{
+		padding: 0;
+	}
+}
+@media only screen and (max-width: 992px) {
+	/*首页各版块外框*/
+	.sup-index-section{
+		width: 690px;
+	}
+	.sup-information{
+		width: 100%;
+	}
+	.sup-module-left{
+		width:168px ;
+		height: 233px;
+		border: 2px solid #00C0FF;
+		position: relative;
+	}
+	.sup-information .sup-module-right{
+		height: 310px;
+	}
+	.module-img-box .module-img{
+		display: inline-block;
+		width: 168px;
+		height: 233px;
+		position: absolute;
+		top: -12px;
+		left: -12px;
+	}
+	.sup-news-title{
+		font-size: 19px;
+	}
+	.sup-label-box{
+		padding: 10px 0;
+		font-size: 12px;
+	}
+	.sup-module-right-text{
+		width: 412px;
+	    line-height: 25px;
+	    height: 124px;
+	    text-align: justify;/*设置段落文字两端对齐*/
+	}	
+	.sup-click-box{
+		bottom: -20px;
+	}
+	/*右边部分*/
+	.sup-news-right{
+		width: 100%;
+		padding-left: 30px;
+	}
+	.news-img{
+		width: 90px;
+		height: 72px;
+	}
+	.sup-recommend-content{
+		float: left;
+		width: 50%;
+	}
+	.sup-tab-right{
+		width: 215px;
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	/*首页各版块外框*/
+	.sup-index-section{
+		width: 680px;
+	}
+	.sup-information{
+		height: 3.38rem;
+		width: 100%;
+	}
+	.sup-module-right{
+		width: 418px;
+		padding: 0 0px 0px 25px;
+		font-size: 14px;
+	}
+	.super-tab-box{
+		height: 230px;
+	}
+	.sup-information:hover .sup-module-left,
+	.sup-information:hover .sup-module-left .module-img-box .module-img{
+		width: 2.20rem;
+		height: 3.05rem;
+	}
+	@keyframes information-text{
+	0{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+		padding-left: 0;
+		width: 3.68rem;
+	}
+}
+	.sup-module-right-text{
+		width: 368px;
+	    text-align: justify;/*设置段落文字两端对齐*/
+	}	
+	.sup-label-box{
+		display: none;
+	}
+	.news-img{
+		width: 67px;
+		height: 53px;
+	}
+	.sup-module-right .sup-tab-text{
+		width: 228px;
+		height: 48px;
+	}
+	.recommend-text,.sup-news-title{
+		display: none;
+	}	
+	.sup-tab-right{
+		width: 228px;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+	
+	
+	/*首页各版块外框*/
+	.sup-index-section{
+		width: 7.50rem;
+	}
+
+	.sup-information{
+		width: 7.03rem;
+		height: 3.2rem;
+	}
+	.sup-module-left{
+		width:2.20rem;
+		height: 3.05rem;
+	}
+	.module-img-box .module-img{
+		display: inline-block;
+		width: 2.16rem;
+		height: 3.01rem;
+	}
+	.sup-module-right{
+		width: 3.68rem;
+		height: 1.54rem;
+		padding: 0 0px 0px 10px;
+	}
+	.sup-module-right-text{
+		width: 3.68rem;
+	    line-height: 25px;
+	    height: 1.2rem;
+	    text-align: justify;/*设置段落文字两端对齐*/
+	}	
+	.sup-label-box{
+		display: none;
+	}
+	.sup-module-right-time span:nth-child(2){
+		display: none;
+	}
+	.sup-click-box{
+		bottom: -10px;
+	}
+	.sup-click-box::before{
+		top: 14px;
+	}
+	.spuer-dh-con{
+		width: 6.60rem;
+		height: 1.96rem;
+	}
+	.sup-tab-right{
+		width: 1.68rem;
+		height: 0.8rem;
+	}
+	.sup-module-right .sup-tab-text{
+		width: 2.09rem;
+		height: .6rem;
+	}
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>模块的封装</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/sup-public-style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/sup-index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/sup-reset.css"/>
+		<link rel="stylesheet" href="css/sup-module.css" />
+		<link rel="stylesheet" href="css/sup-public.css" />
+		<link rel="stylesheet" type="text/css" href="sup-iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/sup-procenter.css"/>
+		<link rel="stylesheet" href="css/sup-procenter-app-content.css"/>
+	</head>
+	<body>
+		<div id="head-side-app"></div>
+		<div id="side-public"></div>
+		<!--APP研发子页面-->
+		<div class="sup-procenter-box">
+			<div class="sup-module clearfix sup-procenter-box-top">
+				
+			</div>
+			<!--为您推荐-->
+			<div class="sup-procenter-recommend-box clearfix font-14">
+				<div class="sup-procenter-recommend-left fl">
+					<div class="sup-procenter-title-box">
+						<h2 class="sup-recommend-title font-16">
+							详细信息
+						</h2>
+					</div>
+					<div class="sup-recommend-content clearfix margin-15-t">
+						<img src="img/procenter-app1.jpg"/>
+						<img src="img/product-build1.jpg"/>
+						<img src="img/product-sign4.jpg"/>
+					</div>
+					<div class="sup-procenter-banner-page clearfix">
+						<div class="procenter-banner-page-left fl">
+							<a class="sup-banner-page prev">上一页：没有了</a>
+						</div>
+						<div class="procenter-banner-page-right fr">
+							<a class="sup-banner-page next">下一页：股市买卖市场</a>
+						</div>
+					</div>
+				</div>
+				<div class="sup-procenter-recommend-right fl padding-20-lr clearfix">
+					<h3 class="sup-recommend-right-title font-16">热门推荐</h3>
+					<ul class="sup-procenter-lists clearfix">
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--图片放大-->
+		<div class="enlarge">
+			<div class="enlarge-content">
+				<div class="enlarge-head">
+					<div class="enlarge-pag">
+						<span class="current">1</span>
+							/
+						<span class="all">2</span>
+					</div>
+					<div class="close">
+						<a class="iconfont icon-guanbi"></a>
+					</div>
+					<a class="iconfont icon-xiazai1"></a>
+					<a class="iconfont icon-fangda2"></a>
+					<a class="iconfont icon-suoxiao"></a>
+					<a class="iconfont icon-fangda"></a>					
+					<a class="iconfont icon-duomeitiicon-"></a>				
+				</div>
+				<!--轮播-->
+				<div class="picFocus">
+					<div class="bd">
+						<div class="tempWrap">
+							<ul>
+								<li>
+									<a><img src="img/procenter-app1.jpg"></a>
+								</li>
+								<li>
+									<a><img src="img/procenter2.jpg"></a>
+								</li>
+								<li>
+									<a><img src="img/procenter3.jpg"></a>
+								</li>
+							</ul>
+						</div>
+					</div>		
+					<div class="hd">
+						<ul>
+							<li class="on"><img src="img/procenter-app1.jpg"></li>
+							<li class=""><img src="img/procenter2.jpg"></li>
+							<li class=""><img src="img/procenter3.jpg"></li>
+						</ul>
+					</div>
+		
+				</div>
+			</div>				
+		</div>
+		<div id="footer-public"></div>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+<script type="text/javascript" src="js/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.3.js" ></script>
+<script type="text/javascript" src="js/enlarge.js" ></script>
+<script src="js/common.js"></script>
+<script src="js/ajax-product-detail.js"></script>
+<script>
+	
+	//公共部分调用 头部底部侧边栏
+	$('#head-side-app').load('header-section/head-side-about.html')
+	$('#side-public').load('side-public.html')
+	$('#footer-public').load('footer-public.html')
+	//调用结束
+	
+	
+	$('.close').click(function(){
+		$('.enlarge').css('display','none')
+	})
+	
+	$('.spuer-tab-item img').click(function(){
+		$('.enlarge').css('display','block')
+	})
+	jQuery(".picFocus").slide({ mainCell:".bd ul",effect:"left",autoPlay:true });
+</script>
+
+
+
+<!-- <script type="text/html" id="p_recommend">
+	{{each data as item i}}
+		<div class="procenter-recommend-right-cont">
+			<div class="procenter-recommend-right-picture">
+				<img src="http://192.168.97.236:3006/{{item.p_img}}">
+				<span class="sup-product-descript-line"></span>
+			</div>
+			<p class="sup-product-descript sup-recommend-right-text text-center">{{item.p_title}}</p>
+			<div class="sup-product-corver">
+				<div class="sup-product-corver-box">
+					<p class="sup-product-corve-circle"><span >+</span></p>
+				</div>
+			</div>
+		</div>
+	{{/each}}
+</script>
+<script>
+
+	$.ajax({
+		url: 'http://192.168.97.236:3006/p_recommend',
+		type: 'get',
+		dataType: 'json',
+		success: function(res) {
+			var html = template('p_recommend',res)
+			$(".procenter-recommend-list").html(html)
+		}
+	})
+
+</script> -->

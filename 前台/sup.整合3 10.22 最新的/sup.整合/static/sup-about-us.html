@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,inital-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>关于我们页面</title>
+		<link rel="stylesheet" type="text/css" href="css/aboutUs.css"/>
+	</head>
+	<body>
+		<!--头部调用-->
+		<div id="head-side-about"></div>
+		<!--侧边栏调用-->
+		<div id="side-public"></div>
+		<!--关于我们-->
+		<div class="about-us">
+			<div class="about-us-box">
+				<div class="row">
+					<div class="met-editor lazyload clearfix">
+						<div class="editorlightgallery">
+							<div class="contact-sub">
+								<p class="b">Internet service technology, Limited by Share Ltd</p>
+								<p class="p margin-30-b margin-10-t"><em>网络服务</em>技术股份有限公司</p>
+								<p class="line-26">网络服务技术股份有限公司（Internet service technology, Limited by Share Ltd）成立于2017年7月，凭借拔尖的团队、优秀的业务能力，星如雨迅速成长为国内SEO的领军者。我们专注网络营销业务，助力您的企业腾飞。同时，我们还拥有一支健全的建站团队，向外界承接APP应用开发/微网站/公众号策划营销等业务。<br>&nbsp;</p>
+							</div>
+							<div class="about-img">
+								<div class="img-box">
+									<img src="img/aboutUs1.jpg">
+								</div>
+								<div class="img-box">
+									<img src="img/aboutUs2.jpg">
+								</div>
+							</div>
+							<h5 class="margin-10-t">
+								<span class="font-18">志存高远追求</span>
+							</h5>
+							<p class="line-26">卓越，更体现在DEMO视觉长远而宏伟发展目标。DEMO视觉不仅在影像艺术、产品质量方面精益求精，更关注企业的正规化、现代化与国际化发展。DEMO视觉在2006年已经形成了现代化企业制度，其制度初稿为诸多同行效仿。2009年3月，DEMO视觉邀请北京大学光华管理学院国际MBA项目组作为企业的管理咨询顾问，全方位提升企业管理实力。步入2010年，DEMO视觉已经形成全方位、国际化的发展战略。</p>
+							<h5 class="margin-30-t">
+								<span class="font-18">社会责任—时刻不忘</span>
+							</h5>
+							<p class="line-26">以人为本，更体现在DEMO视觉对于企业社会责任的关注。DEMO视觉首先是一个优秀视觉企业的代表，以其“言必行、行必果”的诚信态度，提升影像行业在公众心目中的形象；其次，DEMO视觉关注环境保护与企业可持续发展，每次外出拍摄均强调对外景地的环境保护，在产品制造上也讲究使用环保工艺；今后，DEMO视觉还将设定一定比例的公益拍摄活动，担负更多企业社会责任。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--图片放大-->
+		<div class="enlarge">
+			<div class="enlarge-content">
+				<div class="enlarge-head">
+					<div class="enlarge-pag">
+						<span class="current">1</span>
+							/
+						<span class="all">2</span>
+					</div>
+					<div class="close">
+						<a>X</a>
+					</div>
+				</div>
+				<div class="enlarge-bg-img">
+					<ul>
+						<li>
+							<img src="img/aboutUs1.jpg" />
+						</li>
+						<li>
+							<img src="img/aboutUs2.jpg" />
+						</li>
+					</ul>					
+				</div>
+				<ul class="dot-list">
+
+				</ul>
+				<div class="enlarge-down">
+					<p class="enlarge-text">
+						图片关键词
+					</p>
+					<div class="enlarge-sm-img">
+						<div class="img-scroll img-scroll1">
+							<span class="prev prev1"> « </span>
+							<span class="next next1"> » </span>
+							<div class="img-list img-list1">
+								<ul>
+									<li><img src="img/aboutUs1.jpg"></li>
+									<li><img src="img/aboutUs2.jpg"></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>				
+		</div>
+		<!--底部调用-->
+		<div id="footer-public"></div>	
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+<script src="js/sup-common.js"></script>
+<script type="text/javascript" src="js/enlarge.js" ></script>
+<script type="text/javascript" src="js/carouse.js" ></script>
+<script>
+	//引用
+	$('#head-side-about').load('header-section/head-side-about.html')
+	$('#side-public').load('side-public.html')
+	$('#footer-public').load('footer-public.html')
+//	DY_scroll('.img-scroll1', '.prev1', '.next1', '.img-list1', 3, false);
+	
+</script>

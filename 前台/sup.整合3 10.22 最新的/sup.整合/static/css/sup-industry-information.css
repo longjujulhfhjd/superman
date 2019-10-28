@@ -1,0 +1,100 @@
+/*行业资讯样式*/
+.sup-industry-box{
+	padding: 20px;
+	margin-top: 8%;
+}
+.sup-industry-left{
+	width: 67%;
+	/*padding:20px*/
+}
+/*标题*/
+.sup-industry-left .title{
+	font-size: 32px;
+}
+.sup-industry-left ul{
+	margin: 20px 0 15px 0
+}
+.sup-industry-left ul li{
+	float: left;
+}
+.sup-industry-left ul li span i{
+    font-weight: bolder;
+	color: #00C0FF;
+}
+.sup-industry-time-box{
+	border-top: 1px solid #111;
+}
+/*段落*/
+.sup-industry-left .sup-industry-text-box{
+	padding-top: 35px;
+	text-align: justify;
+}
+.sup-industry-text{
+	width: 100%;
+	line-height: 25px;
+}
+
+
+/*右边样式结束*/
+@media only screen and (max-width: 1200px) {
+	/*首页各版块外框*/
+	.sup-news-information{
+		width: 1020px;
+	}
+	/*左边样式开始*/
+	.news-recommend-text{
+		width: 140px;
+		height: 64px;
+	}
+	/*为您推荐*/
+	
+}
+@media only screen and (max-width: 996px) {
+	/*首页各版块外框*/
+	.sup-news-information{
+		width: 788px;
+	}
+	.sup-industry-left{
+		width: 100%;
+	}
+	.news-lists{
+		width: 100%;
+	}
+	/*为您推荐*/
+	.sup-news-information-right{
+		width: 100%;
+	}
+	.sup-news-information-right .new-recommend-content{
+		float: left;
+		width: 50%;
+	}
+	.new-recommend-content .recommend-img-box{
+		display: inline-block;
+		width: 100px;
+		height: 72px;
+	}
+	.news-recommend-text{
+		width:2.16rem;
+		height: 0.34rem;
+	}
+	.new-recommend-content .recommend-img-box img{
+		width: 100%;
+		height: 100%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	/*首页各版块外框*/
+	.sup-news-information{
+		width:596px;
+	}
+	/*为您推荐*/
+	.sup-news-information-right .new-recommend-content{
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 680px) {
+	/*首页各版块外框*/
+	.sup-news-information{
+		width: 7.50rem;	
+	}
+}

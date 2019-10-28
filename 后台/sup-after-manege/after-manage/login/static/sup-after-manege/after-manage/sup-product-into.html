@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>产品详情页面</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fengzhuang.css"/>
+    <link rel="stylesheet" href="js/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/sup-public.css">
+    <link rel="stylesheet" href="css/sup-product.css">
+    <link rel="stylesheet" href="css/sup-product-into.css">
+</head>
+<body>
+    <!-- 公共头部调用 -->
+    <div id="sup-public"></div>
+    <!-- 产品热门推荐开始 -->
+    <div class="case-modoule product-all">
+            <div class="case-modoule-title">产品详情</div>
+            <!-- 添加删除修改 -->
+            <ul class="do-something clearfix">
+                <li class="fl" data-toggle ="modal" data-target=".modal-add.click-product-into"><a>添加</a></li>
+                <li class="fl"><a>删除</a></li>
+                <li class="fl"><a>导入</a></li>
+                <li class="fl"><a>导出</a></li>
+            </ul>
+            <ul class="product-lists into">
+                <li class="list">
+                    <p class="into-title">
+                        <span>产品标题</span>
+                        <span>点击量</span>
+                        <span>时间</span>
+                    </p>
+                    <p class="into-cont first">
+                        <span>biaoti</span>
+                        <span>dsakljd</span>
+                        <span>das</span>
+                        <a class ="fr padding-10-lr change">修改</a>
+                        <a class ="fr padding-10-lr change">删除</a>
+                        <a class ="fr padding-10-lr change">查找</a>
+                    </p>
+                    <div class="into-cont">
+                        <span class="text">样图：</span>
+                        <div class="photo">
+                            <img src=""/>
+                        </div>
+                        <div class="photo">
+                            <img src=""/>
+                        </div>
+                        <div class="photo">
+                            <img src=""/>
+                        </div>
+                        <span class="text">详图：</span>
+                        <div class="photo">
+                            <img src=""/>
+                        </div>
+                        <div class="photo">
+                            <img src=""/>
+                        </div>
+                        <div class="photo">
+                            <img src=""/>
+                        </div>
+                    </div>
+                    <p class="into-cont main-text">
+                        <span>文本描述：</span>
+                        <span>内容</span>
+                    </p>
+                </li>
+            </ul>
+    </div>
+    <!--热门推荐新增弹窗 -->
+    <div class="modal modal-add click-product-into">
+            <div class="modal-dialog">
+                <!-- 弹窗内容 -->
+                <div class="modal-content">
+                    <!-- 弹窗头部 -->
+                    <div class="modal-header">
+                        <span class="close" data-target = ".modal-add"  data-dismiss = "modal" data-dismiss="modal">X</span>
+                        <div class="h4">新增产品-产品详情</div>
+                    </div>
+                    <!-- 弹窗主体 -->
+                    <div class="modal-body">
+                        <form action="" class="form-horizontal form-add-product-into">
+                            <div class="form-group">
+                                <label for="" class="col-xs-3 control-label">产品标题：</label>
+                                <div class="col-xs-8">
+                                    <input type="text" class="form-control" name="title"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                    <label for="" class="col-xs-3 control-label">点击量：</label>
+                                    <div class="col-xs-8">
+                                        <input type="text" class="form-control" name="eye"/>
+                                    </div>
+                                </div>
+                            <div class="form-group">
+                                <label for="" class="col-xs-3 control-label">产品样图：</label>
+                                <div class="col-xs-8">
+                                    <!-- accept = '文件类型' 文件类型限制 -->
+                                    <input class="form-control" name="img1" type="file" accept="image/*"/>
+                                    <input class="form-control" name="img2" type="file" accept="image/*"/>
+                                    <input class="form-control" name="img3" type="file" accept="image/*"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-xs-3 control-label">产品详图：</label>
+                                <div class="col-xs-8">
+                                    <!-- accept = '文件类型' 文件类型限制 -->
+                                    <input class="form-control" name="detailed1" type="file" accept="image/*"/>
+                                    <input class="form-control" name="detailed2" type="file" accept="image/*"/>
+                                    <input class="form-control" name="detailed3" type="file" accept="image/*"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-xs-3 control-label">文本描述：</label>
+                                <div class="col-xs-8">
+                                  <textarea name="text"  cols="50" rows="20"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- 弹窗底部 -->
+                    <div class="modal-footer">
+                        <a class="btn btn-default">取消</a>
+                        <a class="btn btn-primary product-into-add">添加</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- 产品中心热门推荐模块结束 -->
+</body>
+</html>
+<script src = "js/jquery-2.1.0.js"></script>
+<script src="js/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="js/template.js"></script>
+<script src="js/comment.js"></script>
+<script src="js/sup-product-into.js"></script>
+<script>
+    $(function(){
+        $('#sup-public').load('sup-public.html')
+        getProductIntoData()
+    })
+</script> 

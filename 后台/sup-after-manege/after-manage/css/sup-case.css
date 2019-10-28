@@ -1,0 +1,53 @@
+/*案例模块*/
+.case-modoule{
+    width: 83%;
+    float: right;
+   
+}
+.case-modoule-lists{
+    padding-right: 30px;
+}
+.case-modoule-lists .case-list{
+	display: inline-block;
+	width: 33%;
+	margin-left: 30px;
+	line-height: 60px;
+}
+.case-modoule-title{
+	font-size: 20px;
+	font-weight: 500;
+	color: #111;
+}
+/* title */
+.case-title{
+	height: 40px;
+	line-height: 40px;
+}
+.case-title > span{
+	display: inline-block;
+	width: 33%;
+	margin-left: 30px;
+
+}
+.case-title > span:nth-child(2),
+.case-title > span:nth-child(4){
+	width: 60px;
+}
+.case-title > span:nth-child(3){
+	width: 100px;
+}
+.case-modoule-lists .case-list-cont{
+	border-top: 1px solid #999;
+}
+.case-modoule-lists .case-list-cont > a{
+    margin-top:24px;
+} 
+
+
+.case-modoule-lists .case-list-cont .case-list:nth-child(2){
+	width: 60px;
+}
+.case-modoule-lists .case-list-cont .case-list > img{
+	width: 100%;
+}
+

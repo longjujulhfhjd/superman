@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>产品</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fengzhuang.css"/>
+    <link rel="stylesheet" href="js/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/sup-public.css">
+    <link rel="stylesheet" href="css/sup-product.css">
+</head>
+<body>
+    <!-- 公共调用 -->
+    <div id="sup-public"></div>
+    <!-- 产品中心APP开发模块开始 -->
+    <div class="case-modoule product-all">
+        <div class="case-modoule-title">APP开发</div>
+        <!-- 添加删除修改 -->
+        <ul class="do-something clearfix">
+            <li class="fl" data-toggle ="modal" data-target=".modal-add.click-productapp"><a>添加</a></li>
+            <li class="fl"><a>删除</a></li>
+            <li class="fl"><a>导入</a></li>
+            <li class="fl"><a>导出</a></li>
+        </ul>
+        <ul class="product-lists app">
+            <li class="applist">
+                <span>产品标题:</span>
+                <span class="title"></span>
+                <span>图片:</span>
+                <div class="img">
+                    <img src=""/>
+                </div>
+                <a class ="fr padding-10-lr change">修改</a>
+                <a class ="fr padding-10-lr change">删除</a>
+                <a class ="fr padding-10-lr change">查找</a>
+            </li>
+        </ul>
+        <!-- 新闻列表 -->
+        <ul class="case-modoule-lists information">
+        </ul>
+    </div>
+    <!-- 产品中心新增弹窗 -->
+    <div class="modal modal-add click-productapp">
+            <div class="modal-dialog">
+                <!-- 弹窗内容 -->
+                <div class="modal-content">
+                    <!-- 弹窗头部 -->
+                    <div class="modal-header">
+                        <span class="close" data-target = ".modal-add"  data-dismiss = "modal" data-dismiss="modal">X</span>
+                        <div class="h4">新增产品-app开发</div>
+                    </div>
+                    <!-- 弹窗主体 -->
+                    <div class="modal-body">
+                        <form action="" class="form-horizontal form-add-productapp">
+                            <div class="form-group">
+                                <label for="" class="col-xs-3 control-label">产品标题：</label>
+                                <div class="col-xs-8">
+                                    <input type="text" class="form-control" name="title"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-xs-3 control-label">产品图片：</label>
+                                <div class="col-xs-8">
+                                    <!-- accept = '文件类型' 文件类型限制 -->
+                                    <input class="form-control" name="img" type="file" accept="image/*"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- 弹窗底部 -->
+                    <div class="modal-footer">
+                        <a class="btn btn-default">取消</a>
+                        <a class="btn btn-primary productapp-add">添加</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- 产品中心模块结束 -->
+
+    <!-- 产品中心网站建设开始 -->
+    <div class="case-modoule product-all">
+        <div class="case-modoule-title">网站建设</div>
+        <!-- 添加删除修改 -->
+        <ul class="do-something clearfix">
+            <li class="fl" data-toggle ="modal" data-target=".modal-add.click-productbuild"><a>添加</a></li>
+            <li class="fl"><a>删除</a></li>
+            <li class="fl"><a>导入</a></li>
+            <li class="fl"><a>导出</a></li>
+        </ul>
+        <ul class="product-lists build">
+            <li class="applist">
+                <span>产品标题:</span>
+                <span class="title"></span>
+                <span>图片:</span>
+                <div class="img">
+                    <img src=""/>
+                </div>
+                <a class ="fr padding-10-lr change">修改</a>
+                <a class ="fr padding-10-lr change">删除</a>
+                <a class ="fr padding-10-lr change">查找</a>
+            </li>
+        </ul>
+    </div>
+    <!-- 网站建设新增弹窗 -->
+    <div class="modal modal-add click-productbuild">
+            <div class="modal-dialog">
+                <!-- 弹窗内容 -->
+                <div class="modal-content">
+                    <!-- 弹窗头部 -->
+                    <div class="modal-header">
+                        <span class="close" data-target = ".modal-add"  data-dismiss = "modal" data-dismiss="modal">X</span>
+                        <div class="h4">新增产品-app开发</div>
+                    </div>
+                    <!-- 弹窗主体 -->
+                    <div class="modal-body">
+                        <form action="" class="form-horizontal form-add-productbuild">
+                            <div class="form-group">
+                                <label for="" class="col-xs-3 control-label">产品标题：</label>
+                                <div class="col-xs-8">
+                                    <input type="text" class="form-control" name="title"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-xs-3 control-label">产品图片：</label>
+                                <div class="col-xs-8">
+                                    <!-- accept = '文件类型' 文件类型限制 -->
+                                    <input class="form-control" name="img" type="file" accept="image/*"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- 弹窗底部 -->
+                    <div class="modal-footer">
+                        <a class="btn btn-default">取消</a>
+                        <a class="btn btn-primary productbuild-add">添加</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- 产品中心网站建设模块结束 -->
+
+    <!-- 产品中平面设计开始 -->
+    <div class="case-modoule product-all">
+        <div class="case-modoule-title">平面设计</div>
+        <!-- 添加删除修改 -->
+        <ul class="do-something clearfix">
+            <li class="fl" data-toggle ="modal" data-target=".modal-add.click-productsign"><a>添加</a></li>
+            <li class="fl"><a>删除</a></li>
+            <li class="fl"><a>导入</a></li>
+            <li class="fl"><a>导出</a></li>
+        </ul>
+        <ul class="product-lists sign">
+            <li class="applist">
+                <span>产品标题:</span>
+                <span class="title"></span>
+                <span>图片:</span>
+                <div class="img">
+                    <img src=""/>
+                </div>
+                <a class ="fr padding-10-lr change">修改</a>
+                <a class ="fr padding-10-lr change">删除</a>
+                <a class ="fr padding-10-lr change">查找</a>
+            </li>
+        </ul>
+    </div>
+    <!--平面设计新增弹窗 -->
+    <div class="modal modal-add click-productsign">
+            <div class="modal-dialog">
+                <!-- 弹窗内容 -->
+                <div class="modal-content">
+                    <!-- 弹窗头部 -->
+                    <div class="modal-header">
+                        <span class="close" data-target = ".modal-add"  data-dismiss = "modal" data-dismiss="modal">X</span>
+                        <div class="h4">新增产品-平面设计</div>
+                    </div>
+                    <!-- 弹窗主体 -->
+                    <div class="modal-body">
+                        <form action="" class="form-horizontal form-add-productsign">
+                            <div class="form-group">
+                                <label for="" class="col-xs-3 control-label">产品标题：</label>
+                                <div class="col-xs-8">
+                                    <input type="text" class="form-control" name="title"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-xs-3 control-label">产品图片：</label>
+                                <div class="col-xs-8">
+                                    <!-- accept = '文件类型' 文件类型限制 -->
+                                    <input class="form-control" name="img" type="file" accept="image/*"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- 弹窗底部 -->
+                    <div class="modal-footer">
+                        <a class="btn btn-default">取消</a>
+                        <a class="btn btn-primary productsign-add">添加</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- 产品中心平面设计模块结束 -->
+</body>
+</html>
+<script src = "js/jquery-2.1.0.js"></script>
+<script src="js/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="js/template.js"></script>
+<script src="js/comment.js"></script>
+<script src="js/sup-product.js"></script>
+<script> 
+	$(function(){
+		$('#sup-public').load('sup-public.html')
+        getProductappData()
+        getProductbuildData()
+        getProductsignData()
+    })
+</script>

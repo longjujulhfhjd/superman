@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+.service {
+	max-height: 848px;
+    height: 848px;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    position: relative;    
+    background-size: auto 100%;
+    background: url(../img/servicebg1.jpg) no-repeat center top;	
+}
+
+.service:nth-child(2) {
+	background: url(../img/servicebg2.jpg) no-repeat center top;	
+}
+
+.service:nth-child(3) {
+	background: url(../img/servicebg3.jpg) no-repeat center top;	
+}
+
+.service-box {
+	margin: auto;
+	padding: 30px 35px 30px;
+    background: rgba(255,255,255,0.9);
+}
+
+.row {
+	position: relative;
+	max-width: 100%;
+	margin: auto;
+	display: inline-block;
+}
+
+.show-editor {
+    text-align: center;
+}
+
+.show-title {
+    font-size: 54px;
+    padding-bottom: 36px;
+    margin-bottom: 28px;
+    position: relative;
+}
+
+/*左右横线*/
+.show-title .hr-left {
+    width: 130px;
+    margin-right: 18px;
+    width: 150px;
+    height: 1px;
+    background: #111111;
+    opacity: .5;
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 50%;
+    margin-right: 18px;
+}
+
+.show-title .hr-right {
+    width: 130px;
+    margin-left: 17px;
+    width: 150px;
+    height: 1px;
+    background: #111111;
+    opacity: .5;
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    margin-left: 18px;
+}
+
+/*蓝色圆球*/
+.show-title hr {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 0;
+    margin: 0 0 -8px -8px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-color: #00c0ff;
+}
+
+.show-text {
+    font-size: 33px;
+    margin-bottom: 28px;
+}
+
+.show-word {
+    font-size: 26px;
+    margin-bottom: 19px;
+    color: #00c0ff;
+}
+
+.show-desc p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+@media only screen and (max-width: 992px) {
+	.show-title {
+		font-size: 30px;
+	    padding-bottom: 18px;
+	    margin-bottom: 16px;
+	}
+	.show-text {
+		font-size: 18px;
+    	margin-bottom: 10px;
+	}
+	.show-word {
+		font-size: 16px;
+	    margin-bottom: 10px;
+	    padding: 0 15px;
+	}
+	.show-desc p {
+	    font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	
+}

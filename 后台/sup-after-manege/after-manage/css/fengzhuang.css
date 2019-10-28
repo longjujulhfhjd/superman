@@ -1,0 +1,393 @@
+/*样式封装*/
+/*主题内容*/
+.content{
+	width:1200px;
+	margin: 0 auto;
+}
+/*字体大小*/
+.font-0{
+	font-size: 0;
+}
+.font-12{
+	font-size: 12px;
+}
+.font-14{
+	font-size: 14px;
+}
+.font-16{
+	font-size: 16px;
+}
+.font-18{
+	font-size: 18px;
+}
+.font-20{
+	font-size: 20px;
+}
+.font-22{
+	font-size: 22px;
+}
+.font-24{
+	font-size: 24px;
+}
+.font-26{
+	font-size: 26px;
+}
+.font-28{
+	font-size: 28px;
+}
+.font-30{
+	font-size: 30px;
+}
+.font-36{
+	font-size: 36px;
+}
+
+
+/*字体颜色*/
+/*主颜色*/
+.text-white{
+	color:#FFFFFF;
+}
+.text-red{
+	color:#ff2d52;
+}
+/*激活色*/
+.text-dark-red{
+	color:#ec193e
+}
+/*字体暗灰色*/
+.text-dark-gray{
+	color:#333
+}
+/*深灰*/
+.text-deep-gray{
+	color:#666
+}
+/*灰色*/
+.text-gray-a{
+	color:#aaa
+}
+/*浅灰*/
+.text-gray-light{
+	color:#999
+}
+
+
+/*背景色*/
+/*主要背景色*/
+/*主红*/
+.bg-red{
+	background: #FF2D52;
+}
+.bg-dark-red{
+	background:#ec193e;
+}
+/*背景灰色f1到f7*/
+.bg-gray-1{
+	background: #f1f1f1;
+}
+.bg-gray-2{
+	background: #f2f2f2;
+}
+.bg-gray-3{
+	background: #f3f3f3;
+}
+.bg-gray-4{
+	background: #f4f4f4;
+}
+.bg-gray-5{
+	background: #f5f5f5;
+}
+.bg-gray-6{
+	background: #f6f6f6;
+}
+.bg-gray-7{
+	background: #f7f7f7;
+}
+
+/*黑色*/
+.bg-black{
+	background: #535353;
+}
+/*白色*/
+.bg-white{
+	background: #FFFFFF;
+}
+/*外边距*/
+.margin-main{
+	margin: 0 auto;
+}
+
+/*外边距5*/
+.margin-5-t{
+	margin-top: 5px;
+}
+.margin-5-b{
+	margin-bottom: 5px;
+}
+.margin-5-l{
+	margin-left: 5px;
+}
+.margin-5-r{
+	margin-right: 5px;
+}
+.margin-5-tb{
+	margin: 5px 0;
+}
+.margin-5-lr{
+	margin: 0 5px;
+}
+/*外边距10*/
+.margin-10-t{
+	margin-top: 10px;
+}
+.margin-10-b{
+	margin-bottom: 10px;
+}
+.margin-10-l{
+	margin-left: 10px;
+}
+.margin-10-r{
+	margin-right: 10px;
+}
+.margin-10-tb{
+	margin: 10px 0;
+}
+.margin-10-lr{
+	margin: 0 10px;
+}
+/*外边距15*/
+.margin-15-t{
+	margin-top: 15px;
+}
+.margin-15-b{
+	margin-bottom: 15px;
+}
+.margin-15-l{
+	margin-left: 15px;
+}
+.margin-15-r{
+	margin-right: 15px;
+}
+.margin-15-tb{
+	margin: 15px 0;
+}
+.margin-15-lr{
+	margin: 0 15px;
+}
+/*外边距20*/
+.margin-20-t{
+	margin-top: 20px;
+}
+.margin-20-b{
+	margin-bottom: 20px;
+}
+.margin-20-l{
+	margin-left: 20px;
+}
+.margin-20-r{
+	margin-right: 20px;
+}
+.margin-20-tb{
+	margin: 20px 0;
+}
+.margin-20-lr{
+	margin: 0 20px;
+}
+/*外边距25*/
+.margin-25-t{
+	margin-top: 25px;
+}
+.margin-25-b{
+	margin-bottom: 25px;
+}
+.margin-25-l{
+	margin-left: 25px;
+}
+.margin-25-r{
+	margin-right: 25px;
+}
+.margin-25-tb{
+	margin: 25px 0;
+}
+.margin-25-lr{
+	margin: 0 25px;
+}
+/*外边距30*/
+.margin-30-t{
+	margin-top: 30px;
+}
+.margin-30-b{
+	margin-bottom: 30px;
+}
+.margin-30-l{
+	margin-left: 30px;
+}
+.margin-30-r{
+	margin-right: 30px;
+}
+.margin-30-tb{
+	margin: 30px 0;
+}
+.margin-30-lr{
+	margin: 0 30px;
+}
+
+/*内边距*/
+/*10px*/
+.padding-lr{
+	padding: 0 10px;
+}
+
+.padding-20-lr{
+	padding: 0 20px;
+}
+.padding-5-lr{
+	padding: 0 5px;
+}
+.padding-5{
+	padding: 5px;
+}
+.padding-5-t{
+	padding-top:5px;
+}
+.padding-10-t{
+	padding-top:10px;
+}
+.padding-10-lr{
+	padding: 0 10px;
+}
+.padding-5-tb{
+	padding: 5px 0;
+}
+.padding-10-tb{
+	padding: 10px 0;
+}
+.padding-10-l{
+	padding-left: 10px;
+}
+.padding-10-r{
+	padding-right: 10px;
+}
+.padding-20-tb{
+	padding: 20px 0;
+}
+
+
+/*行高*/
+.line-22{
+	line-height: 22px;
+}
+.line-24{
+	line-height: 24px;
+}
+.line-26{
+	line-height: 26px;
+}
+.line-28{
+	line-height: 28px;
+}
+.line-30{
+	line-height: 30px;
+}
+.line-32{
+	line-height: 32px;
+}
+.line-34{
+	line-height: 34px;
+}
+.line-36{
+	line-height: 36px;
+}
+.line-38{
+	line-height: 38px;
+}
+.line-40{
+	line-height: 40px;
+}
+.line-42{
+	line-height: 42px;
+}
+.line-44{
+	line-height: 44px;
+}
+.line-46{
+	line-height: 46px;
+}
+.line-48{
+	line-height: 48px;
+}
+
+
+
+/*浮动*/
+.fl{
+	float: left
+}
+.fr{
+	float: right
+}
+
+/*清楚浮动*/
+.clearfix:after{
+	content:'' ;
+	display:block;
+	clear:both;
+}
+
+/*文本对齐方式*/
+/*右对齐*/
+.text-aligh-r{
+	text-align: right;
+}
+/*左对齐*/
+.text-aligh-l{
+	text-align: left;
+}
+/*中对齐*/
+.text-aligh-c{
+	text-align: center;
+}
+/*按钮封装*/
+/*基础按钮*/
+.button{
+	display: inline-block;
+	padding: 3px 10px;
+	background: #FFFFFF;
+	color: #333;
+	border-radius: 4px;
+	border: 1px solid #CCCCCC;
+}
+/*灰色按钮*/
+.button-gray{
+	display: inline-block;
+	padding: 3px 10px;
+	background: #a8a5bf;
+	color: #FFFFFF;
+	border-radius: 4px;
+	border: 1px solid #a8a5bf;
+}
+/*红色按钮*/
+.button-red{
+	display: inline-block;
+	padding: 3px 10px;
+	background: #FF2D52;
+	color: #FFFFFF;
+	border-radius: 4px;
+	border: 1px solid #FF2D52;
+}
+/*鼠标一上去效果*/
+.button:hover{
+	background: #FF2D52;
+	color: #FFFFFF;
+	border: 1px solid #FF2D52;
+}
+/*红色按钮移动鼠标*/
+.button-red:hover{
+	background: #EC193E;
+	border: 1px solid #EC193E;
+}
+/*超出隐藏*/
+.overflow{
+overflow: hidden;
+}

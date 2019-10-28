@@ -1,0 +1,30 @@
+{
+  "id": "1457223",
+  "name": "sup-icon",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "100849",
+      "name": "eye",
+      "font_class": "eye",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "2239060",
+      "name": "user-04",
+      "font_class": "user-04",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "3197030",
+      "name": "clock",
+      "font_class": "clock",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    }
+  ]
+}

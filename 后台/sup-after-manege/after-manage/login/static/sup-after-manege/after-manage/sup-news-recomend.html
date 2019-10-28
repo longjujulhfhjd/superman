@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新闻热门推荐 </title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fengzhuang.css"/>
+    <link rel="stylesheet" href="js/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/sup-public.css">
+    <link rel="stylesheet" href="css/sup-case.css">
+</head>
+<body>
+        <div id="sup-public"></div>
+    	<!--新闻热门模块-->
+			<div class="case-modoule news-recommend">
+					<div class="case-modoule-title">新闻热门推荐</div>
+                    <!-- 添加删除修改 -->
+                    <ul class="do-something clearfix">
+                        <li class="fl" data-toggle ="modal" data-target=".modal-add.click-news-recommend"><a>添加</a></li>
+                        <li class="fl"><a>删除</a></li>
+                        <li class="fl"><a>导入</a></li>
+                        <li class="fl"><a>导出</a></li>
+                    </ul>
+                    <li class="case-title">
+                            <span class="case-list">案例标题</span>
+                            <span class="case-list">图片</span>
+							<span class="case-list">上传时间</span>
+							<span class="case-list">ID</span>
+							
+                    </li>
+                    <!-- 案例列表 -->	
+                    <ul class="case-modoule-lists news-recommend-lists">
+                        
+                    </ul>
+			</div>
+				<!-- 新增弹窗 -->
+			<div class="modal modal-add click-news-recommend">
+				<div class="modal-dialog">
+					<!-- 弹窗内容 -->
+					<div class="modal-content">
+						<!-- 弹窗头部 -->
+						<div class="modal-header">
+							<span class="close" data-target = ".modal-add"  data-dismiss = "modal" data-dismiss="modal">X</span>
+							<div class="h4">新闻资讯详情</div>
+						</div>
+						<!-- 弹窗主体 -->
+						<div class="modal-body">
+							<form action="" class="form-horizontal form-add-news-recommend">
+								<div class="form-group">
+									<label for="" class="col-xs-3 control-label">详情标题：</label>
+									<div class="col-xs-8">
+										<input type="text" class="form-control" name="title"/>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-xs-3 control-label">图片：</label>
+									<div class="col-xs-8">
+										<!-- accept = '文件类型' 文件类型限制 -->
+										<input class="form-control" name="img" type="file" accept="image/*"/>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- 弹窗底部 -->
+						<div class="modal-footer">
+							<a class="btn btn-default">取消</a>
+							<a class="btn btn-primary news-recommend-add">添加</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--新闻模块结束-->
+    
+</body>
+</html>
+<script src = "js/jquery-2.1.0.js"></script>
+<script src="js/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="js/template.js"></script>
+<script src="js/comment.js"></script>
+<script src="js/sup-news-recommend.js"></script>
+<script> 
+	$(function(){
+		$('#sup-public').load('sup-public.html')
+		getNewsrecommendData()
+	})
+</script>

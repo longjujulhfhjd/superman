@@ -1,0 +1,143 @@
+/*项目相关模块的封装*/
+/*圆点的封装
+ *通过调用.cicrle类
+ *  */
+.cicrle::before{
+	content: "";
+    background: #62A8EA;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+   	display: inline-block;
+   	margin-right: 10px;
+   	vertical-align: 3px;
+}
+/*READ MORE按钮
+ *通过调用.sup-click-box类
+ * 
+ *  */
+.sup-click-box{
+	display: block;
+    width: 185px;
+    height: 30px;
+    font-size: 17px;
+    line-height: 30px;
+    padding-left: 15px;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    bottom:-40px
+}
+/*鼠标移上去线的文字的变化*/
+.sup-click-box:hover{
+	color: #00C0FF;
+}
+/*线*/
+.sup-click-box::before{
+	background: #111111;
+    height: 1px;
+    width: 100%;
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: 50%;
+    left: 0;
+    box-sizing: inherit;
+    -webkit-transition: width .2s;
+    -webkit-transition: .5s 0.3s ease-out;
+}
+/*鼠标移上去线的变化*/
+.sup-click-box:hover::before{
+	opacity: 0;
+	width: 0;
+}
+.sup-click-box::after{
+	content: '>>>';
+    display: inline-block;
+    letter-spacing: 0;
+    padding-left: 6px;
+    font-size: 18px;
+}
+/*鼠标移上去箭头的变化*/
+.sup-click-box:hover::after{
+	color: #00C0FF;
+	 padding-left: 7px;
+}
+/*侧边栏鼠标移上去的效果样式开始
+ * 通过调用.aside-move类和.back类
+ * */
+.aside-move{
+	display: inline-block;
+	width: 284px;
+	height: 60px;
+	line-height: 60px;
+	transition: 2s;
+	position: relative;
+	background: deepskyblue;
+}
+.main-text{
+	position: relative;
+	z-index: 10;
+}
+.text2{
+	float: right;
+}
+.back{
+	display: inline-block;
+	width: 100%;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: width 1s, background-color 1s;
+	background: #fff;
+}
+.aside-move:hover .back{
+	width: 0;
+}
+/*侧边栏鼠标移上去的效果样式结束*/
+
+/*tab切换样式 */
+*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	.super-dh-lists li{
+		float: left;
+		padding: 20px;
+		position: relative;
+	}
+	.super-dh-lists li a:hover{
+		color: #ff2d52;
+	}
+	
+	.super-dh-lists li .square{
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		border: 1px solid red;	
+		position: relative;
+	}
+	
+	.super-dh-lists li .square i{
+		position: absolute;
+		top:-4px;	
+		display: none;
+	}
+	
+	.super-dh-con .item{
+		width: 200px;
+		height: 200px;
+		border: 1px solid red;
+		padding: 20px;
+		display: none;
+	}
+	.super-tab-title.on .square i {
+		display: block;
+	}

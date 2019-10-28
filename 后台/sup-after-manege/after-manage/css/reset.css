@@ -1,0 +1,39 @@
+/*通配符*/
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+line-height: 1;
+}
+/*body*/
+body{
+	font-size: 12px;
+	color: #333;
+	font-family: "微软雅黑", arial;
+}
+/*spam标签*/
+/* span{
+} */
+/*a标签*/
+a{
+	text-decoration: none;
+	color: #333;
+}
+/*li标签*/
+li{
+	list-style: none;
+}
+/*input框*/
+input{
+	border: 1px solid #ccc;
+	/*display: block;*/
+}
+
+/*聚焦*/
+:focus{
+	outline: 0;
+}
+/*删除标签*/
+/*line-through删除线*/
+del{
+	text-decoration:line-through
+}

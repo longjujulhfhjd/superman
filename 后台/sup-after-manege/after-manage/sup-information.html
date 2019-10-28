@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fengzhuang.css"/>
+    <link rel="stylesheet" href="js/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/sup-public.css">
+    <link rel="stylesheet" href="css/sup-case.css">
+    <link rel="stylesheet" href="css/sup-information.css">
+</head>
+<body>
+        <div id="sup-public"></div>
+    	<!--新闻模块-->
+			<div class="case-modoule information">
+					<div class="case-modoule-title">新闻板块</div>
+					<!-- 添加删除修改 -->
+					<ul class="do-something clearfix">
+						<li class="fl" data-toggle ="modal" data-target=".modal-add.clickinformation"><a>添加</a></li>
+						<li class="fl"><a>删除</a></li>
+						<li class="fl"><a>导入</a></li>
+						<li class="fl"><a>导出</a></li>
+                    </ul>
+                    <div class="information-title">
+                        <span class="title-list">新闻标题</span>
+                        <span class="title-list">图片</span>
+                        <span class="title-list">作者</span>
+						<span class="title-list">点击量</span>
+						<span class="title-list">时间</span>
+                        <!-- <p class="text">文章</p> -->
+					</div>
+					<!-- 新闻列表 -->
+					<ul class="case-modoule-lists information">
+					</ul>
+			</div>
+				<!-- 新增弹窗 -->
+			<div class="modal modal-add clickinformation">
+				<div class="modal-dialog">
+					<!-- 弹窗内容 -->
+					<div class="modal-content">
+						<!-- 弹窗头部 -->
+						<div class="modal-header">
+							<span class="close" data-target = ".modal-add"  data-dismiss = "modal" data-dismiss="modal">X</span>
+							<div class="h4">新增商品</div>
+						</div>
+						<!-- 弹窗主体 -->
+						<div class="modal-body">
+							<form action="" class="form-horizontal form-add-information">
+								<div class="form-group">
+									<label for="" class="col-xs-3 control-label">新闻标题：</label>
+									<div class="col-xs-8">
+										<input type="text" class="form-control" name="title"/>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-xs-3 control-label">图片：</label>
+									<div class="col-xs-8">
+										<!-- accept = '文件类型' 文件类型限制 -->
+										<input class="form-control" name="img" type="file" accept="image/*"/>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-xs-3 control-label">作者：</label>
+										<div class="col-xs-8">
+											<input type="text" class="form-control" name="author"/>
+										</div>
+								</div>
+								<div class="form-group">
+										<label for="" class="col-xs-3 control-label">点击量：</label>
+										<div class="col-xs-8">
+											<input type="text" class="form-control" name="click"/>
+										</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-xs-3 control-label">文章：</label>
+									<div class="col-xs-8">
+										<!-- accept = '文件类型' 文件类型限制 -->
+										<textarea name="text" cols="60" rows="40">asda</textarea>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- 弹窗底部 -->
+						<div class="modal-footer">
+							<a class="btn btn-default">取消</a>
+							<a class="btn btn-primary information-add">添加</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--新闻模块结束-->
+    
+</body>
+</html>
+<script src = "js/jquery-2.1.0.js"></script>
+<script src="js/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="js/template.js"></script>
+<script src="js/comment.js"></script>
+<!-- <script src="js/sup-case.js"></script> -->
+<script src="js/sup-information.js"></script>
+<script> 
+	$(function(){
+		$('#sup-public').load('sup-public.html')
+		getinformationData()
+	})
+</script>

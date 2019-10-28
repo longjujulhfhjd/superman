@@ -1,0 +1,269 @@
+a{
+	cursor: pointer;	
+}
+a:hover{
+	color: #1380ab;
+}
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.white-gray-border{
+	width: 100%;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #FFF;
+}
+/*头部*/
+.main-nav{
+	width: 100%;
+	height: 70px;
+	background: #F1F1F1;
+	border-bottom: 3px solid #275e91;
+	padding-top: 40px;
+}
+.header-logo{
+	width: 180px;
+	height: 24px;
+	padding: 0 20px;
+	margin-top: -6px;
+}
+.header-logo img{
+	width: 100%;
+	height: auto;
+}
+.main-nav .nav-lists{
+	display: flex;
+	width: 700px;
+	border: 1px solid #DADADA;
+	border-bottom: none;
+	height: 27px;
+	background: #F7F7F7;	
+}
+.main-nav .nav-lists > li{
+	float: left;
+	line-height: 26px;
+	flex: auto;
+	text-align: center;
+}
+.header-welcome{
+	background: #F1F1F1;
+	margin-left: 100px;
+	height: 26px;
+	border-bottom: 1px solid #e2e2e2;
+}
+.header-welcome > li{
+	float: left;
+	line-height: 25px;
+}
+.header-welcome > .border{
+	margin: 7px 10px;
+	height: 12px;
+	width: 1.5px;
+	background: #E1E1E1;
+}
+/*侧边定位*/
+.side{
+	position: fixed;
+	width: 200px;
+    height: 100%;
+    left: 0;
+    top: 96px;
+    padding-bottom: 48px;
+    min-height: 222px;
+    background: #417eb7;
+    /*z-index: 9;*/
+}
+.side-header-pho{
+	width: 52px;
+	height: 52px;
+	border: 2px solid #666;
+	position: absolute;
+	left: 18px;
+	top: -22px;
+	text-align: center;
+	padding: 2px;
+}
+.side-header-pho img{
+	background: red;
+	width: 44px;
+	height: 44px;
+	/*width: auto;*/	
+	/*height: auto;*/
+	max-height: 100%;	
+	max-width: 100%;	
+}
+.side-top{
+	margin-bottom: 12px;
+	height:21px;
+	line-height: 21px;
+	padding-right: 28px;
+	text-align: right;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4b4a4a), color-stop(1, #0c0c0c))
+}
+.side-lists{
+	border-top:1px solid #2969a6;
+	width: 100%;
+}
+.side-lists > li:first-child{
+	border-top:1px solid #488bcd;
+}
+.side-lists > li{
+	height: 28px;
+	line-height: 28px;
+	padding-left: 32px;	
+}
+.side-lists > li:hover{
+	background: #1380cb;
+}
+.side-lists > li .text{
+	color: #b9ddff;
+	margin-left: 10px;
+} 
+.side-botton{
+	position: fixed;
+	/*z-index: 10;*/
+	width: 200px;
+	bottom: 0px;
+	padding: 9px;
+	color: #b9ddff;
+	line-height: 22px;
+	border-top: 1px dashed #ccc;
+    background: #417eb7;
+}
+.side-botton > p{
+	line-height: 14px;
+}
+/*副导航*/
+.secend-nav{
+	position: fixed;
+	top: 96px;
+	left: 200px;
+	padding: 6px 220px 6px 20px;
+	height: 35px;
+	width: 100%;
+	background: #F1F1F1;
+}
+.secend-nav > ul{
+	border-bottom: 1px solid #CCCCCC;
+}
+.secend-nav > ul > li{
+	line-height: 23px;
+	float: left;
+	padding:0 14px;
+}
+.secend-nav > ul > li:first-child{
+	color: #417eb7;
+}
+.secend-nav > ul > li:hover{
+	background: darkcyan;
+}
+.secend-nav > ul > li:first-child:hover{
+	background: #fff;
+}
+.secend-nav > ul > li > a:hover{
+	color: #fff;
+}
+/*主内容main-cont*/
+.main-cont{
+	border-top: 1px solid #fff;
+	width:100%;
+	padding:126px 20px 0 220px;
+	background: #F1F1F1;
+}
+.tishi{
+	margin: 10px 0;
+	
+}
+.tishi .title{
+	width: 100%;
+	height: 32px;
+	border: 1px solid #E2E2E2;
+	background: #fff;
+	line-height: 30px; 
+}
+.tishi .title .btn{
+	display: none;
+	line-height: 30px;
+	margin-right: 15px;
+	
+}
+.tishi .title .btn.active{
+	display: block;
+}
+.tishi .text p{
+	line-height: 22px;
+}
+.goods-list-serch{
+	margin-top: 10px;
+}
+.goods-list-serch .top{
+	margin-bottom: 10px;
+}
+.goods-list-serch .form-group .lable{
+	line-height: 24px;
+	padding-right: 10px;
+	vertical-align: 1px;
+}
+.goods-list-serch .form-group .lable.serch{
+	margin-left:16px;
+}
+.goods-list-serch .form-group input{
+	width: 180px;
+	height: 26px;
+	padding: 0 10px;
+}
+.goods-list-serch .botton .form-group input{
+	width: 150px;
+}
+.goods-list-serch .botton .form-group .button{
+	padding: 6px 20px;
+	background: #999;
+	margin-left: 14px;
+	transition: all 1s;
+}
+.goods-list-serch .botton .form-group .button a{
+	color: #fff;
+}
+.goods-list-serch .botton .form-group .button:hover{
+	border-color: #e1e1e1;
+	background: #ccc;
+}
+.goods-list-serch .form-group input:hover{
+	border:1px solid blue;
+}
+.goods-list-serch .form-group span.info{
+	margin-left: -24px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	padding-left: 3px;
+	border: 1px solid #666;
+	vertical-align:2px;
+	background: #e6e6e6;
+}
+.goods-list-serch .form-group input:hover ~ .info{
+	background: lightblue;	
+}
+.do-something{
+	margin: 10px 0;
+	border: 1px solid #e2e2e2;
+	height: 30px;
+}
+.do-something  > li{
+		line-height: 30px;
+		padding: 0 15px;
+}
+
+/* 各板块 */
+.case-modoule{
+    width: 83%;
+    float: right;
+}
+
+
+
+footer{
+	height: 1000px;
+}

@@ -1,0 +1,147 @@
+/*READ MORE封装样式begin 这里你们不用管*/
+.sup-module{
+	/*background: #fff;*/
+	padding: 40px;
+}
+.sup-module-left{
+	/*min-width:234px ;
+	min-height: 325px;*/
+	border: 2px solid #00C0FF;
+	position: relative;
+}
+.module-img-box .module-img{
+	display: inline-block;
+	width: 280px;
+	height: 390px;
+	position: absolute;
+	top: -12px;
+	left: -12px;
+}
+/*右边样式begin*/
+.sup-module-right{
+	padding: 0 0px 0px 25px;
+	font-size: 15px;
+}
+.sup-module-right .title{
+	margin: 0;
+	font-size: 24px;
+}
+.sup-module-right-time .sup-module-right-time-text{
+	padding-right: 15px;
+	font-size: 15px;
+}
+.sup-module-right-time .sup-module-right-time-text .sign{
+	font-size: 14px;
+    color: #00C0FF;
+    font-weight: bolder;
+    padding-right: 5px;
+}
+.sup-module-right .title:hover{
+	color: #111111;
+}
+.sup-module-right-text{
+	width: 441px;
+    line-height: 25px;
+    height: 158px;
+    text-align: justify;/*设置段落文字两端对齐*/
+}	
+p{
+	margin: 0;
+}
+/*标签*/
+.sup-label-box{
+	padding: 20px 0;
+}
+.text{
+	padding: 10px;
+	color: #000000;
+}
+.sup-label-box .text:hover{
+	color: #00C0FF;
+}
+.label-text{
+	color: #111111;
+}
+.cicrle::before{
+	content: "";
+    background: #62A8EA;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+   	display: inline-block;
+   	margin-right: 10px;
+   	vertical-align: 3px;
+}
+/*READ MORE按钮*/
+.sup-click-box{
+	display: block;
+    width: 185px;
+    height: 30px;
+    font-size: 17px;
+    line-height: 30px;
+    padding-left: 15px;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    bottom:-12px
+}
+/*线*/
+.sup-click-box::before{
+	background: #111111;
+    height: 1px;
+    width: 100%;
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: 50%;
+    left: 0;
+    box-sizing: inherit;
+    -webkit-transition: width .2s;
+    -webkit-transition: .5s 0.3s ease-out;
+}
+.sup-click-box:hover::before{
+	opacity: 0;
+	width: 0;
+}
+.sup-click-box::after{
+	content: '>>>';
+    display: inline-block;
+    letter-spacing: 0;
+    padding-left: 6px;
+    font-size: 18px;
+}
+.sup-click-box:hover::after{
+	color: #00C0FF;
+	 padding-left: 7px;
+}
+.sup-click-box:hover{
+	color: #00C0FF;
+}
+/*为您推荐样式begin*/
+.sup-recommend-box{
+	background: #fff;
+	width: 601px;
+}
+.sup-recommend-box .sup-recommend-title{
+	font-size: 24px;
+	position: relative;
+	border-bottom: 1px solid black;
+}
+.sup-recommend-box .sup-recommend-title::after{
+	content: "";
+    width: 103px;
+    height: 1px;
+    position: absolute;
+    top: 40px;
+    background: #00C0FF;
+    left: 0;
+}
+/*内容部分*/
+.recommend-img-box .recommend-img{
+	display: inline-block;
+	width: 135px;
+	height: 97px;
+}
+:hover.sup-recommend-text{
+	color: #00C0FF;
+}
