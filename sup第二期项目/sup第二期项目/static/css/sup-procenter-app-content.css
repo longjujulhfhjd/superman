@@ -1,0 +1,333 @@
+
+.sup-procenter-box{
+	background: url(../img/procenter-background.png);
+	display: inline-block;
+	margin-top: 80px;
+}
+.sup-procenter-box-top{
+	width: 90%;
+	padding: 40px 20px;
+	margin: 0 auto;
+	background: #fff;
+}
+.sup-procenter-banner-box{
+	width: 50%;
+}
+.sup-procenter-banner-box .sup-procenter-banner-picture{
+	max-width: 100%;
+	position: relative;
+}
+.sup-procenter-banner-box .sup-procenter-banner-picture img{
+	width: 100%;
+}
+
+/*轮播按钮*/
+.sup-procenter-banner-btn{
+	width: 27px;
+	height: 44px;
+	color: #fff;
+	position: absolute;
+	font-size: 30px;
+	text-align: center;
+	line-height: 44px;
+	background: rgba(0,0,0,.05);
+}
+.sup-procenter-banner-btn.left{
+	top: 50%;
+	left: 0;
+}
+.sup-procenter-banner-btn.right{
+	top: 50%;
+	right: 0;
+}
+.sup-procenter-banner-btn:hover{
+	background: rgba(0,0,0,.35);
+}
+
+.sup-procenter-banner-tab{
+	width: 100%;
+	padding-top: 15px;
+	text-align: center;
+}
+.sup-procenter-banner-tab li{
+	display: inline-block;
+	margin-right: 20px;
+	width: 80px;
+	height: 60px;
+}
+.sup-procenter-index img{
+	max-width: 80px;
+	max-height: 60px;
+}
+.sup-procenter-banner-content{
+	width: 50%;
+	padding: 15px 30px;
+}
+.sup-module-right-text{
+	margin-right: 0;
+	width: 100%;
+}
+
+
+/*热门推荐*/
+.sup-procenter-recommend-box{
+	padding: 40px;
+	width: 90%;
+	margin: 0 auto;
+	/*background: #fff;*/
+}
+
+/*左部分*/
+.sup-procenter-recommend-left{
+	width: 75%;
+	margin-top: 70px;
+	padding-right: 35px;
+	padding-top: 20px;
+	background: #fff;
+}
+.sup-procenter-title-box{
+	width: 100%;
+	border-bottom: 1px solid #E2E2E2;
+}
+.sup-procenter-recommend-box .sup-recommend-title{
+	width: 106px;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: -1px;
+	padding: 0 20px 10px;
+	border-bottom: 1px solid #00C0FF;
+}
+.sup-procenter-recommend-box .sup-recommend-title:hover{
+	color: #00C0FF;
+}
+.sup-procenter-recommend-left img{
+	width: 100%;
+	max-height: 586px;
+}
+
+/*翻页*/
+.sup-procenter-banner-page{
+	border-top: 1px solid #E2E2E2;
+	margin-top: 40px;
+}
+.procenter-banner-page-left{
+	width: 50%;
+	text-align: left;
+	margin: 30px 0;
+	padding: 0 14px;
+}
+.procenter-banner-page-right{
+	width: 50%;
+	text-align: right;
+	margin: 30px 0;
+	padding: 0 14px;
+}
+.sup-banner-page{
+	border: 1px solid #ccc;
+	padding: 10px 16px;
+	height: 48px;
+	line-height: 46px;
+}
+.sup-banner-page:hover{
+	border-color: #00c0ff;
+	color: #00c0ff;
+}
+
+/*右部分*/
+.sup-procenter-recommend-right{
+	width: 25%;
+	margin-top: 70px;
+	padding-top: 20px;
+	background: #fff;
+}
+.sup-procenter-recommend-box .sup-recommend-right-title{
+	height: 40px;
+	line-height: 40px;
+	padding-bottom: 10px;
+	width: 100%;
+}
+.sup-procenter-lists{
+	width: 100%;
+}
+.sup-procenter-lists li{
+	display: inline-block;
+	width: 100%;
+	float: left;
+	padding: 0 5px;
+	margin-bottom: 30px;
+}
+.procenter-recommend-right-cont{
+	width: 100%;
+	padding-right:10px;
+	float: left;
+	text-align: center;
+}
+.sup-procenter-recommend-right img{
+	width: 100%;
+	max-height: 160px;
+}
+.sup-procenter-recommend-box .sup-recommend-right-text{
+	line-height: 50px;
+}
+
+/*图片*/
+.enlarge {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.9);
+	z-index: 100;
+	display: none;
+}
+
+.enlarge-content {
+	position: relative;
+	height: 100%;
+}
+
+.enlarge-head {
+	height: 30px;
+	padding: 10px;
+}
+
+.enlarge-head a{
+	font-size: 26px;
+	float: right;
+	color: #999;
+	margin-right: 20px;
+}
+
+.enlarge-pag {
+	float: left;
+	color: #999;
+	margin-left: 10px;
+    line-height: 30px;
+}
+
+.close {
+	float: right;
+}
+
+/*切换图片*/
+.picFocus {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.bd {
+	margin-top: 10%;
+}
+
+.picFocus .bd img {
+    width: 550px;
+    /*height: 230px;*/
+    display: block;
+}
+
+.tempWrap {
+	overflow: hidden; 
+	position: relative; 
+	width: 550px;
+	margin: auto;
+}
+
+.tempWrap ul {
+	width: 2000px; 
+	left: -1126.98px; 
+	position: relative; 
+	overflow: hidden; 
+	padding: 0px; 
+	margin: 0px;
+}
+
+.tempWrap li {
+	float: left; 
+	width: 550px;
+}
+
+.picFocus .hd {
+    width: 100%;
+    padding-top: 5px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 100px;
+}
+
+.picFocus .hd ul {
+    margin-right: -5px;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.picFocus .hd ul li {
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.hd ul li:hover {
+	border: 2px solid #00ACED;
+}
+
+.hd img {
+	width: 96px;
+}
+
+.picFocus .hd ul li.on {
+    /*background: url(../img/169.png) no-repeat center 0;*/
+}
+
+
+/*切换图片结束*/
+
+
+@media only screen and (max-width: 992px) {
+	.sup-procenter-banner-box{
+		width: 100%;
+	}
+	.sup-procenter-banner-content{
+		width: 100%;
+	}
+	.sup-procenter-recommend-left{
+		width: 100%;
+	}
+	.sup-procenter-recommend-right{
+		width: 100%;
+	}
+	.sup-procenter-lists li{
+		width: 33.333%;
+	}
+	.sup-procenter-recommend-box{
+		padding: 0;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.sup-procenter-banner-box{
+		width: 100%;
+	}
+	.sup-procenter-banner-content{
+		width: 100%;
+	}
+	.sup-procenter-recommend-left{
+		width: 100%;
+	}
+	.sup-procenter-recommend-right{
+		width: 100%;
+	}
+	.sup-procenter-lists li{
+		width: 33.333%;
+	}
+	.sup-procenter-recommend-box{
+		padding: 30px;
+	}
+}
